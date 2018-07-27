@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TCPhotoViewer'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'A Swift 4 port of NYTPhotoViewer.'
   s.description      = <<-DESC
 TCPhotoViewer is a slideshow and image viewer that includes double-tap to zoom, captions, support for multiple images, interactive flick to dismiss, animated zooming presentation, and more.
