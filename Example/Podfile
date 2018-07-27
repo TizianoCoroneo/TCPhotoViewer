@@ -1,5 +1,7 @@
 use_frameworks!
 
+platform :ios, '11.0'
+
 target 'TCPhotoViewer_Example' do
   pod 'TCPhotoViewer', :path => '../'
 
