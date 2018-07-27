@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TCPhotoViewer_Example' do
+  pod 'TCPhotoViewer', :path => '../'
+
+  target 'TCPhotoViewer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
