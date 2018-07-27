@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		062EF1830F9BDFCEE88EFC59 /* Pods_TCPhotoViewer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91D58FBDF367FC7E04757DE /* Pods_TCPhotoViewer_Example.framework */; };
-		35AC79A6210B77A300310928 /* TCPhotosViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC799F210B77A000310928 /* TCPhotosViewControllerTests.swift */; };
-		35AC79A7210B77A300310928 /* TCPhotosOverlayViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC79A0210B77A100310928 /* TCPhotosOverlayViewTests.swift */; };
-		35AC79A8210B77A300310928 /* TCPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC79A1210B77A100310928 /* TCPhotoViewController.swift */; };
-		35AC79A9210B77A300310928 /* TCPhotoViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC79A2210B77A100310928 /* TCPhotoViewerTests.swift */; };
-		35AC79AA210B77A300310928 /* TCPhotosDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC79A3210B77A200310928 /* TCPhotosDataSourceTests.swift */; };
-		35AC79AB210B77A300310928 /* TCScalingImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC79A4210B77A200310928 /* TCScalingImageViewTests.swift */; };
-		35AC79AC210B77A300310928 /* TCPhotoCaptionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC79A5210B77A200310928 /* TCPhotoCaptionViewTests.swift */; };
+		35AC79C5210B79CA00310928 /* TCPhotoCaptionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC79A5210B77A200310928 /* TCPhotoCaptionViewTests.swift */; };
+		35AC79C6210B79CA00310928 /* TCPhotosDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC79A3210B77A200310928 /* TCPhotosDataSourceTests.swift */; };
+		35AC79C7210B79CA00310928 /* TCPhotosOverlayViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC79A0210B77A100310928 /* TCPhotosOverlayViewTests.swift */; };
+		35AC79C8210B79CA00310928 /* TCPhotosViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC799F210B77A000310928 /* TCPhotosViewControllerTests.swift */; };
+		35AC79C9210B79CA00310928 /* TCPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC79A1210B77A100310928 /* TCPhotoViewController.swift */; };
+		35AC79CA210B79CA00310928 /* TCPhotoViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC79A2210B77A100310928 /* TCPhotoViewerTests.swift */; };
+		35AC79CB210B79CA00310928 /* TCScalingImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC79A4210B77A200310928 /* TCScalingImageViewTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -342,15 +342,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35AC79A6210B77A300310928 /* TCPhotosViewControllerTests.swift in Sources */,
-				35AC79AB210B77A300310928 /* TCScalingImageViewTests.swift in Sources */,
-				35AC79AC210B77A300310928 /* TCPhotoCaptionViewTests.swift in Sources */,
-				35AC79A7210B77A300310928 /* TCPhotosOverlayViewTests.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				35AC79A9210B77A300310928 /* TCPhotoViewerTests.swift in Sources */,
-				35AC79A8210B77A300310928 /* TCPhotoViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				35AC79AA210B77A300310928 /* TCPhotosDataSourceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +351,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35AC79C7210B79CA00310928 /* TCPhotosOverlayViewTests.swift in Sources */,
+				35AC79C6210B79CA00310928 /* TCPhotosDataSourceTests.swift in Sources */,
+				35AC79C8210B79CA00310928 /* TCPhotosViewControllerTests.swift in Sources */,
+				35AC79CA210B79CA00310928 /* TCPhotoViewerTests.swift in Sources */,
+				35AC79C9210B79CA00310928 /* TCPhotoViewController.swift in Sources */,
+				35AC79CB210B79CA00310928 /* TCScalingImageViewTests.swift in Sources */,
+				35AC79C5210B79CA00310928 /* TCPhotoCaptionViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -482,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -496,6 +496,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 23YF8RW87L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/TCPhotoViewer\"",
+				);
 				INFOPLIST_FILE = TCPhotoViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -512,6 +516,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 23YF8RW87L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/TCPhotoViewer\"",
+				);
 				INFOPLIST_FILE = TCPhotoViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
