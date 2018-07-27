@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		062EF1830F9BDFCEE88EFC59 /* Pods_TCPhotoViewer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91D58FBDF367FC7E04757DE /* Pods_TCPhotoViewer_Example.framework */; };
+		35AC79A6210B77A300310928 /* TCPhotosViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC799F210B77A000310928 /* TCPhotosViewControllerTests.swift */; };
+		35AC79A7210B77A300310928 /* TCPhotosOverlayViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC79A0210B77A100310928 /* TCPhotosOverlayViewTests.swift */; };
+		35AC79A8210B77A300310928 /* TCPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC79A1210B77A100310928 /* TCPhotoViewController.swift */; };
+		35AC79A9210B77A300310928 /* TCPhotoViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC79A2210B77A100310928 /* TCPhotoViewerTests.swift */; };
+		35AC79AA210B77A300310928 /* TCPhotosDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC79A3210B77A200310928 /* TCPhotosDataSourceTests.swift */; };
+		35AC79AB210B77A300310928 /* TCScalingImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC79A4210B77A200310928 /* TCScalingImageViewTests.swift */; };
+		35AC79AC210B77A300310928 /* TCPhotoCaptionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC79A5210B77A200310928 /* TCPhotoCaptionViewTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		CBF7ADFD988DA0ADAE3DD6F5 /* Pods_TCPhotoViewer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF4B30F0EE7E2368E0D94F4 /* Pods_TCPhotoViewer_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,9 +34,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B00E46388071C3AB09BD9F0 /* TCPhotoViewer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TCPhotoViewer.podspec; path = ../TCPhotoViewer.podspec; sourceTree = "<group>"; };
+		0B00E46388071C3AB09BD9F0 /* TCPhotoViewer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TCPhotoViewer.podspec; path = ../TCPhotoViewer.podspec; sourceTree = "<group>"; };
 		1449156D0E7646A4EB7AB61C /* Pods-TCPhotoViewer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCPhotoViewer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCPhotoViewer_Example/Pods-TCPhotoViewer_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		32314F0D76AE52B6E2BC5FF2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		32314F0D76AE52B6E2BC5FF2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		35AC799F210B77A000310928 /* TCPhotosViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPhotosViewControllerTests.swift; sourceTree = "<group>"; };
+		35AC79A0210B77A100310928 /* TCPhotosOverlayViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPhotosOverlayViewTests.swift; sourceTree = "<group>"; };
+		35AC79A1210B77A100310928 /* TCPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPhotoViewController.swift; sourceTree = "<group>"; };
+		35AC79A2210B77A100310928 /* TCPhotoViewerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPhotoViewerTests.swift; sourceTree = "<group>"; };
+		35AC79A3210B77A200310928 /* TCPhotosDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPhotosDataSourceTests.swift; sourceTree = "<group>"; };
+		35AC79A4210B77A200310928 /* TCScalingImageViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCScalingImageViewTests.swift; sourceTree = "<group>"; };
+		35AC79A5210B77A200310928 /* TCPhotoCaptionViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPhotoCaptionViewTests.swift; sourceTree = "<group>"; };
 		366166CC629CCADBE8E827A1 /* Pods-TCPhotoViewer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCPhotoViewer_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCPhotoViewer_Example/Pods-TCPhotoViewer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5DF4B30F0EE7E2368E0D94F4 /* Pods_TCPhotoViewer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCPhotoViewer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* TCPhotoViewer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCPhotoViewer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,9 +55,8 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* TCPhotoViewer_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCPhotoViewer_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		780534977A5F8DA7479D589B /* Pods-TCPhotoViewer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCPhotoViewer_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCPhotoViewer_Tests/Pods-TCPhotoViewer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9A3164529248BEE3FF34F645 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9A3164529248BEE3FF34F645 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CA259D4DCAE45F3F74DFFA61 /* Pods-TCPhotoViewer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCPhotoViewer_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCPhotoViewer_Tests/Pods-TCPhotoViewer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F91D58FBDF367FC7E04757DE /* Pods_TCPhotoViewer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCPhotoViewer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -115,7 +127,13 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				35AC79A5210B77A200310928 /* TCPhotoCaptionViewTests.swift */,
+				35AC79A3210B77A200310928 /* TCPhotosDataSourceTests.swift */,
+				35AC79A0210B77A100310928 /* TCPhotosOverlayViewTests.swift */,
+				35AC799F210B77A000310928 /* TCPhotosViewControllerTests.swift */,
+				35AC79A1210B77A100310928 /* TCPhotoViewController.swift */,
+				35AC79A2210B77A100310928 /* TCPhotoViewerTests.swift */,
+				35AC79A4210B77A200310928 /* TCScalingImageViewTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -212,10 +230,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 23YF8RW87L;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 23YF8RW87L;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -322,8 +342,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35AC79A6210B77A300310928 /* TCPhotosViewControllerTests.swift in Sources */,
+				35AC79AB210B77A300310928 /* TCScalingImageViewTests.swift in Sources */,
+				35AC79AC210B77A300310928 /* TCPhotoCaptionViewTests.swift in Sources */,
+				35AC79A7210B77A300310928 /* TCPhotosOverlayViewTests.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				35AC79A9210B77A300310928 /* TCPhotoViewerTests.swift in Sources */,
+				35AC79A8210B77A300310928 /* TCPhotoViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				35AC79AA210B77A300310928 /* TCPhotosDataSourceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +358,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +495,7 @@
 			baseConfigurationReference = 1449156D0E7646A4EB7AB61C /* Pods-TCPhotoViewer_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 23YF8RW87L;
 				INFOPLIST_FILE = TCPhotoViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -484,6 +511,7 @@
 			baseConfigurationReference = 366166CC629CCADBE8E827A1 /* Pods-TCPhotoViewer_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 23YF8RW87L;
 				INFOPLIST_FILE = TCPhotoViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -498,6 +526,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 780534977A5F8DA7479D589B /* Pods-TCPhotoViewer_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 23YF8RW87L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -520,6 +549,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA259D4DCAE45F3F74DFFA61 /* Pods-TCPhotoViewer_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 23YF8RW87L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
