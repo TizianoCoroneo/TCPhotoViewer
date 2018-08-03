@@ -255,7 +255,7 @@ open class TCPhotosViewController: UIViewController {
         }
     }
 
-    init(dataSource: TCPhotoViewerDataSource?) {
+    public init(dataSource: TCPhotoViewerDataSource?) {
         super.init(nibName: nil, bundle: nil)
         commonInit(
             dataSource: dataSource,
@@ -263,7 +263,7 @@ open class TCPhotosViewController: UIViewController {
             delegate: nil)
     }
 
-    init(
+    public init(
         dataSource: TCPhotoViewerDataSource?,
         initialPhotoIndex: Int,
         delegate: TCPhotosViewControllerDelegate?) {
@@ -274,7 +274,7 @@ open class TCPhotosViewController: UIViewController {
             delegate: delegate)
     }
 
-    init(
+    public init(
         dataSource: TCPhotoViewerDataSource?,
         initialPhoto: TCPhoto?,
         delegate: TCPhotosViewControllerDelegate?) {
@@ -282,12 +282,12 @@ open class TCPhotosViewController: UIViewController {
         commonInit(dataSource: dataSource, initialPhoto: initialPhoto, delegate: delegate)
     }
 
-    convenience init(withPhotos photos: [TCPhoto]?) {
+    public convenience init(withPhotos photos: [TCPhoto]?) {
         let dataSource = TCPhotoViewerArrayDataSource(withPhotos: photos)
         self.init(dataSource: dataSource)
     }
 
-    convenience init(withPhotos photos: [TCPhoto]?, initialPhoto: TCPhoto?) {
+    public convenience init(withPhotos photos: [TCPhoto]?, initialPhoto: TCPhoto?) {
         let dataSource = TCPhotoViewerArrayDataSource(withPhotos: photos)
         self.init(
             dataSource: dataSource,
