@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol TCPhotoContainer {
+public protocol TCPhotoContainer {
 
     var photo: TCPhoto? { get }
 }
 
-protocol TCPhotoViewerDataSource: class {
+public protocol TCPhotoViewerDataSource: class {
     var numberOfPhotos: Int { get }
 
     func indexOfPhoto(_ photo: TCPhoto) -> Int?

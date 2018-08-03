@@ -8,11 +8,11 @@
 
 import UIKit
 
-class TCScalingImageView: UIScrollView {
+open class TCScalingImageView: UIScrollView {
 
-    var imageView: UIImageView!
+    open var imageView: UIImageView!
 
-    override var frame: CGRect {
+    open override var frame: CGRect {
         get { return super.frame }
         set {
             super.frame = newValue
@@ -21,7 +21,7 @@ class TCScalingImageView: UIScrollView {
         }
     }
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit(photo: UIImage(), data: nil)
     }
@@ -36,7 +36,7 @@ class TCScalingImageView: UIScrollView {
         commonInit(photo: nil, data: imageData)
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit(photo: nil, data: nil)
     }
@@ -47,7 +47,7 @@ class TCScalingImageView: UIScrollView {
         updateZoomScale()
     }
 
-    override func didAddSubview(_ subview: UIView) {
+    open override func didAddSubview(_ subview: UIView) {
         super.didAddSubview(subview)
         centerScrollViewContents()
     }

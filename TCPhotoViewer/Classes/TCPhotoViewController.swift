@@ -10,23 +10,23 @@ import UIKit
 
 let tcPhotoViewControllerPhotoImageUpdatedNotification = "NYTPhotoViewControllerPhotoImageUpdatedNotification"
 
-protocol TCPhotoViewControllerDelegate: class, NSObjectProtocol {
+public protocol TCPhotoViewControllerDelegate: class, NSObjectProtocol {
     func photoViewController(
         _ photoViewController: TCPhotoViewController,
         didLongPressWithGestureRecognizer: UILongPressGestureRecognizer)
 }
 
-class TCPhotoViewController: UIViewController, TCPhotoContainer, UIScrollViewDelegate {
+open class TCPhotoViewController: UIViewController, TCPhotoContainer, UIScrollViewDelegate {
 
-    var photo: TCPhoto?
+    open var photo: TCPhoto?
 
-    weak var delegate: TCPhotoViewControllerDelegate?
+    open weak var delegate: TCPhotoViewControllerDelegate?
 
-    var scalingImageView: TCScalingImageView?
-    var loadingView: UIView?
-    var notificationCenter: NotificationCenter?
+    open var scalingImageView: TCScalingImageView?
+    open var loadingView: UIView?
+    open var notificationCenter: NotificationCenter?
 
-    lazy var doubleTapGestureRecognizer: UITapGestureRecognizer = {
+    open lazy var doubleTapGestureRecognizer: UITapGestureRecognizer = {
         let recognizer = UITapGestureRecognizer(
             target: self,
             action: #selector(didDoubleTapWithGestureRecognizer(_:)))
@@ -34,11 +34,11 @@ class TCPhotoViewController: UIViewController, TCPhotoContainer, UIScrollViewDel
         return recognizer
     }()
 
-    lazy var longPressGestureRecognizer: UILongPressGestureRecognizer = UILongPressGestureRecognizer(
+    open lazy var longPressGestureRecognizer: UILongPressGestureRecognizer = UILongPressGestureRecognizer(
         target: self,
         action: #selector(didLongPressWithGestureRecognizer(_:)))
 
-    init(
+    public init(
         withPhoto photo: TCPhoto?,
         loadingView: UIView?,
         notificationCenter: NotificationCenter?) {
@@ -49,12 +49,12 @@ class TCPhotoViewController: UIViewController, TCPhotoContainer, UIScrollViewDel
             notificationCenter: notificationCenter)
     }
 
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         commonInit(photo: nil, loadingView: nil, notificationCenter: nil)
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.commonInit(photo: nil, loadingView: nil, notificationCenter: nil)
     }
@@ -64,7 +64,7 @@ class TCPhotoViewController: UIViewController, TCPhotoContainer, UIScrollViewDel
         notificationCenter?.removeObserver(self)
     }
 
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
 
         self.notificationCenter?.addObserver(
@@ -83,7 +83,7 @@ class TCPhotoViewController: UIViewController, TCPhotoContainer, UIScrollViewDel
         view.addGestureRecognizer(longPressGestureRecognizer)
     }
 
-    override func viewWillLayoutSubviews() {
+    override open func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
 
         scalingImageView?.frame = view.bounds
@@ -94,7 +94,7 @@ class TCPhotoViewController: UIViewController, TCPhotoContainer, UIScrollViewDel
             y: view.bounds.midY)
     }
 
-    override func prefersHomeIndicatorAutoHidden() -> Bool {
+    override open func prefersHomeIndicatorAutoHidden() -> Bool {
         return true
     }
 
@@ -123,7 +123,7 @@ class TCPhotoViewController: UIViewController, TCPhotoContainer, UIScrollViewDel
         self.notificationCenter = notificationCenter
     }
 
-    func setupLoadingView(_ loadingView: UIView?) {
+    open func setupLoadingView(_ loadingView: UIView?) {
         self.loadingView = loadingView
         guard loadingView == nil else { return }
         let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .white)
@@ -131,14 +131,14 @@ class TCPhotoViewController: UIViewController, TCPhotoContainer, UIScrollViewDel
         self.loadingView = activityIndicator
     }
 
-    @objc func photoImageUpdated(withNotification notification: Notification) {
+    @objc open func photoImageUpdated(withNotification notification: Notification) {
         if let photo = notification.object as? TCPhoto,
             photo === self.photo! {
             self.updateImage(photo.image, imageData: photo.imageData)
         }
     }
 
-    func updateImage(_ image: UIImage?, imageData: Data?) {
+    open func updateImage(_ image: UIImage?, imageData: Data?) {
         if let imageData = imageData {
             self.scalingImageView?.updateImageData(imageData)
         } else {
@@ -152,7 +152,7 @@ class TCPhotoViewController: UIViewController, TCPhotoContainer, UIScrollViewDel
         }
     }
 
-    @objc func didDoubleTapWithGestureRecognizer(_ recognizer: UITapGestureRecognizer) {
+    @objc open func didDoubleTapWithGestureRecognizer(_ recognizer: UITapGestureRecognizer) {
 
         guard let scalingImageView = self.scalingImageView
             else { return }
@@ -177,21 +177,21 @@ class TCPhotoViewController: UIViewController, TCPhotoContainer, UIScrollViewDel
         scalingImageView.zoom(to: rectToZoomTo, animated: true)
     }
 
-    @objc func didLongPressWithGestureRecognizer(_ recognizer: UILongPressGestureRecognizer) {
+    @objc open func didLongPressWithGestureRecognizer(_ recognizer: UILongPressGestureRecognizer) {
         if recognizer.state == .began {
             delegate?.photoViewController(self, didLongPressWithGestureRecognizer: recognizer)
         }
     }
 
-    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+    open func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return scalingImageView?.imageView
     }
 
-    func scrollViewWillBeginZooming(_ scrollView: UIScrollView, with view: UIView?) {
+    open func scrollViewWillBeginZooming(_ scrollView: UIScrollView, with view: UIView?) {
         scrollView.panGestureRecognizer.isEnabled = true
     }
 
-    func scrollViewDidEndZooming(
+    open func scrollViewDidEndZooming(
         _ scrollView: UIScrollView,
         with view: UIView?,
         atScale scale: CGFloat) {

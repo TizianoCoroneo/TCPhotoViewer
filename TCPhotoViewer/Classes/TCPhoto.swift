@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc protocol TCPhoto: NSObjectProtocol {
+@objc public protocol TCPhoto: NSObjectProtocol {
 
     var image: UIImage? { get }
 

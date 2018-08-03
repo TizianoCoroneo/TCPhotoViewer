@@ -17,7 +17,7 @@ let tcPhotosViewControllerInterPhotoSpacing: CGFloat = 16.0
 let tcPhotosViewControllerCloseButtonImageInsets = UIEdgeInsets(
     top: 3, left: 0, bottom: -3, right: 0)
 
-@objc protocol TCPhotosViewControllerDelegate: class, NSObjectProtocol {
+@objc public protocol TCPhotosViewControllerDelegate: class, NSObjectProtocol {
     @objc optional func photoViewController(
         _ photoViewController: TCPhotosViewController,
         titleForPhoto photo: TCPhoto,
@@ -70,7 +70,7 @@ let tcPhotosViewControllerCloseButtonImageInsets = UIEdgeInsets(
 
 }
 
-class TCPhotosViewController: UIViewController {
+open class TCPhotosViewController: UIViewController {
 
     lazy var pageViewController: UIPageViewController = {
         let vc = UIPageViewController(
@@ -149,15 +149,15 @@ class TCPhotosViewController: UIViewController {
         pageViewController.delegate = nil
     }
 
-    override func copy(_ sender: Any?) {
+    override open func copy(_ sender: Any?) {
         UIPasteboard.general.image = currentlyDisplayedPhoto?.image
     }
 
-    override var canBecomeFirstResponder: Bool {
+    override open var canBecomeFirstResponder: Bool {
         return true
     }
 
-    override func canPerformAction(
+    override open func canPerformAction(
         _ action: Selector,
         withSender sender: Any?) -> Bool {
         return shouldHandleLongPress
@@ -174,7 +174,7 @@ class TCPhotosViewController: UIViewController {
             delegate: nil)
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
         commonInit(
@@ -183,7 +183,7 @@ class TCPhotosViewController: UIViewController {
             delegate: nil)
     }
 
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
 
         configurePageViewControllerWithInitialPhoto()
@@ -211,7 +211,7 @@ class TCPhotosViewController: UIViewController {
         transitionController.endingView = endingView
     }
 
-    override func viewDidAppear(_ animated: Bool) {
+    override open func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
         if !overlayWasHiddenBeforeTransition {
@@ -219,27 +219,27 @@ class TCPhotosViewController: UIViewController {
         }
     }
 
-    override func viewWillLayoutSubviews() {
+    override open func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
 
         pageViewController.view.frame = view.bounds
         overlayView.frame = view.bounds
     }
 
-    override var prefersStatusBarHidden: Bool {
+    override open var prefersStatusBarHidden: Bool {
         return true
     }
 
-    override func prefersHomeIndicatorAutoHidden() -> Bool {
+    override open func prefersHomeIndicatorAutoHidden() -> Bool {
         return true
     }
 
-    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+    override open var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
         return .fade
     }
 
 
-    func configurePageViewControllerWithInitialPhoto(_ initialPhotoViewController: TCPhotoViewController) {
+    open func configurePageViewControllerWithInitialPhoto(_ initialPhotoViewController: TCPhotoViewController) {
 
         var initialPhotoViewController: TCPhotoViewController? = nil
 
@@ -313,7 +313,7 @@ class TCPhotosViewController: UIViewController {
         _ = pageViewController
     }
 
-    func configurePageViewControllerWithInitialPhoto() {
+    open func configurePageViewControllerWithInitialPhoto() {
         var initialPhotoViewController: TCPhotoViewController? = nil
 
         if let photo = initialPhoto,
@@ -329,7 +329,7 @@ class TCPhotosViewController: UIViewController {
         }
     }
 
-    func addOverlayView() {
+    open func addOverlayView() {
 
         let textColor: UIColor = self.view.tintColor ?? .white
         self.overlayView.titleTextAttribute = [
@@ -341,7 +341,7 @@ class TCPhotosViewController: UIViewController {
         self.setOverlay(hidden: true, animated: false)
     }
 
-    func updateOverlayInformation() {
+    open func updateOverlayInformation() {
         guard
             let dataSource = dataSource,
             let photo = self.currentlyDisplayedPhoto,
@@ -391,7 +391,7 @@ class TCPhotosViewController: UIViewController {
         self.overlayView.captionView = captionView
     }
 
-    func setOverlay(hidden: Bool, animated: Bool) {
+    open func setOverlay(hidden: Bool, animated: Bool) {
 
         if hidden == self.overlayView.isHidden { return }
         guard animated else { overlayView.isHidden = hidden; return }
@@ -412,11 +412,11 @@ class TCPhotosViewController: UIViewController {
     }
 
 
-    @objc func didSingleTapWithGestureRecognizer(_ recognizer: UITapGestureRecognizer) {
+    @objc open func didSingleTapWithGestureRecognizer(_ recognizer: UITapGestureRecognizer) {
         setOverlay(hidden: !overlayView.isHidden, animated: true)
     }
 
-    @objc func didPanWithGestureRecognizer(_ recognizer: UIPanGestureRecognizer) {
+    @objc open func didPanWithGestureRecognizer(_ recognizer: UIPanGestureRecognizer) {
         if panGestureRecognizer.state == .began {
             transitionController.forcesNonInteractiveDismissal = false
             dismiss(animated: true, isUserInitiated: true, completion: nil)
@@ -431,7 +431,7 @@ class TCPhotosViewController: UIViewController {
         }
     }
 
-    func setCurrentlyDisplayed(_ viewController: TCPhotoContainer?, animated: Bool) {
+    open func setCurrentlyDisplayed(_ viewController: TCPhotoContainer?, animated: Bool) {
         guard let viewController = viewController,
             let dataSource = dataSource
             else { return }
@@ -456,7 +456,7 @@ class TCPhotosViewController: UIViewController {
             completion: nil)
     }
 
-    func newPhotoViewControllerForPhoto(_ photo: TCPhoto?) -> TCPhotoViewController? {
+    open func newPhotoViewControllerForPhoto(_ photo: TCPhoto?) -> TCPhotoViewController? {
         guard let photo = photo else { return nil }
 
         var loadingView: UIView?
@@ -481,7 +481,7 @@ class TCPhotosViewController: UIViewController {
         return photoViewController
     }
 
-    func didNavigate(toPhoto photo: TCPhoto) {
+    open func didNavigate(toPhoto photo: TCPhoto) {
         if let index = dataSource?.indexOfPhoto(photo) {
             delegate?.photosViewController?(
                 self,
@@ -493,11 +493,11 @@ class TCPhotosViewController: UIViewController {
     }
 
 
-    @objc func doneButtonTapped() {
+    @objc open func doneButtonTapped() {
         dismiss(animated: true, isUserInitiated: true, completion: nil)
     }
 
-    @objc func actionButtontapped(_ sender: UIBarButtonItem) {
+    @objc open func actionButtontapped(_ sender: UIBarButtonItem) {
         guard let photo = self.currentlyDisplayedPhoto else { return }
 
         var clientDidHandle = false
@@ -531,7 +531,7 @@ class TCPhotosViewController: UIViewController {
         }
     }
 
-    func displayActivityViewController(
+    open func displayActivityViewController(
         _ controller: UIActivityViewController,
         animated: Bool) {
 
@@ -563,7 +563,7 @@ class TCPhotosViewController: UIViewController {
         set { overlayView.rightBarButtonItems = newValue }
     }
 
-    func displayPhoto(_ photo: TCPhoto?, animated: Bool) {
+    open func displayPhoto(_ photo: TCPhoto?, animated: Bool) {
         guard
             let photo = photo,
             let _ = dataSource?.indexOfPhoto(photo),
@@ -574,13 +574,13 @@ class TCPhotosViewController: UIViewController {
         updateOverlayInformation()
     }
 
-    func updatePhoto(atIndex photoIndex: Int) {
+    open func updatePhoto(atIndex photoIndex: Int) {
         guard let photo = self.dataSource?.photoAtIndex(photoIndex)
             else { return }
         self.updatePhoto(photo: photo)
     }
 
-    func updatePhoto(photo: TCPhoto?) {
+    open func updatePhoto(photo: TCPhoto?) {
         guard let photo = photo,
             let _ = dataSource?.indexOfPhoto(photo)
             else { return }
@@ -592,7 +592,7 @@ class TCPhotosViewController: UIViewController {
         }
     }
 
-    func reloadPhotos(animated: Bool) {
+    open func reloadPhotos(animated: Bool) {
         let newCurrentPhoto: TCPhoto?
 
         if let dataSource = dataSource,
@@ -611,7 +611,7 @@ class TCPhotosViewController: UIViewController {
         }
     }
 
-    func dismiss(
+    open func dismiss(
         animated: Bool,
         isUserInitiated: Bool,
         completion: (() -> Void)? = nil) {
@@ -667,7 +667,7 @@ class TCPhotosViewController: UIViewController {
 }
 
 extension TCPhotosViewController: TCPhotoViewControllerDelegate {
-    func photoViewController(_ photoViewController: TCPhotoViewController, didLongPressWithGestureRecognizer recognizer: UILongPressGestureRecognizer) {
+    open func photoViewController(_ photoViewController: TCPhotoViewController, didLongPressWithGestureRecognizer recognizer: UILongPressGestureRecognizer) {
         self.shouldHandleLongPress = false
 
         let clientDidHandle = delegate?.photosViewController?(
@@ -691,7 +691,7 @@ extension TCPhotosViewController: TCPhotoViewControllerDelegate {
 
 extension TCPhotosViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
 
-    func pageViewController(
+    public func pageViewController(
         _ pageViewController: UIPageViewController,
         viewControllerBefore viewController: UIViewController) -> UIViewController? {
 
@@ -708,7 +708,7 @@ extension TCPhotosViewController: UIPageViewControllerDataSource, UIPageViewCont
         return newPhotoViewControllerForPhoto(dataSource.photoAtIndex(index - 1))
     }
 
-    func pageViewController(
+    public func pageViewController(
         _ pageViewController: UIPageViewController,
         viewControllerAfter viewController: UIViewController) -> UIViewController? {
 
@@ -724,7 +724,7 @@ extension TCPhotosViewController: UIPageViewControllerDataSource, UIPageViewCont
     }
 
 
-    func pageViewController(
+    public func pageViewController(
         _ pageViewController: UIPageViewController,
         didFinishAnimating finished: Bool,
         previousViewControllers: [UIViewController],
@@ -738,22 +738,6 @@ extension TCPhotosViewController: UIPageViewControllerDataSource, UIPageViewCont
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
