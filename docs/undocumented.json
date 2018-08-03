@@ -1,6 +1,733 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhoto.swift",
+      "line": 11,
+      "symbol": "TCPhoto",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhoto.swift",
+      "line": 13,
+      "symbol": "TCPhoto.image",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhoto.swift",
+      "line": 15,
+      "symbol": "TCPhoto.imageData",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhoto.swift",
+      "line": 17,
+      "symbol": "TCPhoto.placeholderImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhoto.swift",
+      "line": 19,
+      "symbol": "TCPhoto.attributedCaptionTitle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhoto.swift",
+      "line": 20,
+      "symbol": "TCPhoto.attributedCaptionSummary",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhoto.swift",
+      "line": 21,
+      "symbol": "TCPhoto.attributedCaptionCredit",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoContainer.swift",
+      "line": 11,
+      "symbol": "TCPhotoContainer",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoContainer.swift",
+      "line": 13,
+      "symbol": "TCPhotoContainer.photo",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoContainer.swift",
+      "line": 16,
+      "symbol": "TCPhotoViewerDataSource",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoContainer.swift",
+      "line": 17,
+      "symbol": "TCPhotoViewerDataSource.numberOfPhotos",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoContainer.swift",
+      "line": 19,
+      "symbol": "TCPhotoViewerDataSource.indexOfPhoto(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoContainer.swift",
+      "line": 20,
+      "symbol": "TCPhotoViewerDataSource.photoAtIndex(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 13,
+      "symbol": "TCPhotoViewControllerDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 14,
+      "symbol": "TCPhotoViewControllerDelegate.photoViewController(_:didLongPressWithGestureRecognizer:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 19,
+      "symbol": "TCPhotoViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 21,
+      "symbol": "TCPhotoViewController.photo",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 23,
+      "symbol": "TCPhotoViewController.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 25,
+      "symbol": "TCPhotoViewController.scalingImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 26,
+      "symbol": "TCPhotoViewController.loadingView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 27,
+      "symbol": "TCPhotoViewController.notificationCenter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 29,
+      "symbol": "TCPhotoViewController.doubleTapGestureRecognizer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 37,
+      "symbol": "TCPhotoViewController.longPressGestureRecognizer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 41,
+      "symbol": "TCPhotoViewController.init(withPhoto:loadingView:notificationCenter:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 52,
+      "symbol": "TCPhotoViewController.init(nibName:bundle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 57,
+      "symbol": "TCPhotoViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 67,
+      "symbol": "TCPhotoViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 86,
+      "symbol": "TCPhotoViewController.viewWillLayoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 97,
+      "symbol": "TCPhotoViewController.prefersHomeIndicatorAutoHidden()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 126,
+      "symbol": "TCPhotoViewController.setupLoadingView(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 134,
+      "symbol": "TCPhotoViewController.photoImageUpdated(withNotification:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 141,
+      "symbol": "TCPhotoViewController.updateImage(_:imageData:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 155,
+      "symbol": "TCPhotoViewController.didDoubleTapWithGestureRecognizer(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 180,
+      "symbol": "TCPhotoViewController.didLongPressWithGestureRecognizer(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 186,
+      "symbol": "TCPhotoViewController.viewForZooming(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 190,
+      "symbol": "TCPhotoViewController.scrollViewWillBeginZooming(_:with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewController.swift",
+      "line": 194,
+      "symbol": "TCPhotoViewController.scrollViewDidEndZooming(_:with:atScale:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewerArrayDataSource.swift",
+      "line": 11,
+      "symbol": "TCPhotoViewerArrayDataSource",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewerArrayDataSource.swift",
+      "line": 13,
+      "symbol": "TCPhotoViewerArrayDataSource.photos",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewerArrayDataSource.swift",
+      "line": 15,
+      "symbol": "TCPhotoViewerArrayDataSource.init(withPhotos:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewerArrayDataSource.swift",
+      "line": 20,
+      "symbol": "TCPhotoViewerArrayDataSource.numberOfPhotos",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewerArrayDataSource.swift",
+      "line": 24,
+      "symbol": "TCPhotoViewerArrayDataSource.photoAtIndex(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewerArrayDataSource.swift",
+      "line": 29,
+      "symbol": "TCPhotoViewerArrayDataSource.indexOfPhoto(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewerArrayDataSource.swift",
+      "line": 33,
+      "symbol": "TCPhotoViewerArrayDataSource.subscript(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewerArrayDataSource.swift",
+      "line": 38,
+      "symbol": "TCPhotoViewerSinglePhotoDataSource",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewerArrayDataSource.swift",
+      "line": 40,
+      "symbol": "TCPhotoViewerSinglePhotoDataSource.photo",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewerArrayDataSource.swift",
+      "line": 42,
+      "symbol": "TCPhotoViewerSinglePhotoDataSource.init(withPhoto:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewerArrayDataSource.swift",
+      "line": 47,
+      "symbol": "TCPhotoViewerSinglePhotoDataSource.numberOfPhotos",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewerArrayDataSource.swift",
+      "line": 51,
+      "symbol": "TCPhotoViewerSinglePhotoDataSource.photoAtIndex(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotoViewerArrayDataSource.swift",
+      "line": 55,
+      "symbol": "TCPhotoViewerSinglePhotoDataSource.indexOfPhoto(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": null,
+      "symbol": "TCPhotosViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": null,
+      "symbol": "TCPhotosViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 20,
+      "symbol": "TCPhotosViewControllerDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 21,
+      "symbol": "TCPhotosViewControllerDelegate.photoViewController(_:titleForPhoto:atIndex:totalPhotoCount:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 27,
+      "symbol": "TCPhotosViewControllerDelegate.photoViewController(_:captionViewForPhoto:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 31,
+      "symbol": "TCPhotosViewControllerDelegate.photoViewController(_:loadingViewForPhoto:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 35,
+      "symbol": "TCPhotosViewControllerDelegate.photosViewController(_:captionViewRespectsSafeAreaForPhoto:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 39,
+      "symbol": "TCPhotosViewControllerDelegate.photosViewController(willDismiss:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 42,
+      "symbol": "TCPhotosViewControllerDelegate.photosViewController(didDismiss:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 45,
+      "symbol": "TCPhotosViewControllerDelegate.photosViewController(_:didNavigateToPhoto:atIndex:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 50,
+      "symbol": "TCPhotosViewControllerDelegate.photoViewController(_:maximumZoomScaleForPhoto:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 54,
+      "symbol": "TCPhotosViewControllerDelegate.photoViewController(_:referenceViewForCurrentPhoto:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 58,
+      "symbol": "TCPhotosViewControllerDelegate.photosViewController(_:handleActionButtonTappedForPhoto:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 62,
+      "symbol": "TCPhotosViewControllerDelegate.photosViewController(_:handleLongPressForPhoto:withGestureRecognizer:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 67,
+      "symbol": "TCPhotosViewControllerDelegate.photosViewController(_:actionCompletedWithActivityType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 73,
+      "symbol": "TCPhotosViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 152,
+      "symbol": "TCPhotosViewController.copy(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 156,
+      "symbol": "TCPhotosViewController.canBecomeFirstResponder",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 160,
+      "symbol": "TCPhotosViewController.canPerformAction(_:withSender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 177,
+      "symbol": "TCPhotosViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 186,
+      "symbol": "TCPhotosViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 214,
+      "symbol": "TCPhotosViewController.viewDidAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 222,
+      "symbol": "TCPhotosViewController.viewWillLayoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 229,
+      "symbol": "TCPhotosViewController.prefersStatusBarHidden",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 233,
+      "symbol": "TCPhotosViewController.prefersHomeIndicatorAutoHidden()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 237,
+      "symbol": "TCPhotosViewController.preferredStatusBarUpdateAnimation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 242,
+      "symbol": "TCPhotosViewController.configurePageViewControllerWithInitialPhoto(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 316,
+      "symbol": "TCPhotosViewController.configurePageViewControllerWithInitialPhoto()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 332,
+      "symbol": "TCPhotosViewController.addOverlayView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 344,
+      "symbol": "TCPhotosViewController.updateOverlayInformation()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 394,
+      "symbol": "TCPhotosViewController.setOverlay(hidden:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 415,
+      "symbol": "TCPhotosViewController.didSingleTapWithGestureRecognizer(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 419,
+      "symbol": "TCPhotosViewController.didPanWithGestureRecognizer(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 434,
+      "symbol": "TCPhotosViewController.setCurrentlyDisplayed(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 459,
+      "symbol": "TCPhotosViewController.newPhotoViewControllerForPhoto(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 484,
+      "symbol": "TCPhotosViewController.didNavigate(toPhoto:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 496,
+      "symbol": "TCPhotosViewController.doneButtonTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 500,
+      "symbol": "TCPhotosViewController.actionButtontapped(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 534,
+      "symbol": "TCPhotosViewController.displayActivityViewController(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 566,
+      "symbol": "TCPhotosViewController.displayPhoto(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 577,
+      "symbol": "TCPhotosViewController.updatePhoto(atIndex:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 583,
+      "symbol": "TCPhotosViewController.updatePhoto(photo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 595,
+      "symbol": "TCPhotosViewController.reloadPhotos(animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 614,
+      "symbol": "TCPhotosViewController.dismiss(animated:isUserInitiated:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 670,
+      "symbol": "TCPhotosViewController.photoViewController(_:didLongPressWithGestureRecognizer:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 694,
+      "symbol": "TCPhotosViewController.pageViewController(_:viewControllerBefore:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 711,
+      "symbol": "TCPhotosViewController.pageViewController(_:viewControllerAfter:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCPhotosViewController.swift",
+      "line": 727,
+      "symbol": "TCPhotosViewController.pageViewController(_:didFinishAnimating:previousViewControllers:transitionCompleted:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCScalingImageView.swift",
+      "line": 11,
+      "symbol": "TCScalingImageView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCScalingImageView.swift",
+      "line": 13,
+      "symbol": "TCScalingImageView.imageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCScalingImageView.swift",
+      "line": 15,
+      "symbol": "TCScalingImageView.frame",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCScalingImageView.swift",
+      "line": 24,
+      "symbol": "TCScalingImageView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCScalingImageView.swift",
+      "line": 39,
+      "symbol": "TCScalingImageView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tizianocoroneo/Downloads/TCPhotoViewer/TCPhotoViewer/Classes/TCScalingImageView.swift",
+      "line": 50,
+      "symbol": "TCScalingImageView.didAddSubview(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
   ],
   "source_directory": "/Users/tizianocoroneo/Downloads/TCPhotoViewer"
 }

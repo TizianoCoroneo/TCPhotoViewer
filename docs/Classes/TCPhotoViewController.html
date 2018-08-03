@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TCPhotoViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/TCPhotoViewController" class="dashAnchor"></a>
+    <a title="TCPhotoViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">TCPhotoViewer Docs</a> (0% documented)</p>
+        <p class="header-right"><a href="https://github.com/TizianoCoroneo/TCPhotoViewer"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">TCPhotoViewer Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        TCPhotoViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/TCPhotoViewController.html">TCPhotoViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TCPhotoViewerArrayDataSource.html">TCPhotoViewerArrayDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TCPhotoViewerSinglePhotoDataSource.html">TCPhotoViewerSinglePhotoDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TCPhotosViewController.html">TCPhotosViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TCScalingImageView.html">TCScalingImageView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/TCPhoto.html">TCPhoto</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TCPhotoContainer.html">TCPhotoContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TCPhotoViewControllerDelegate.html">TCPhotoViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TCPhotoViewerDataSource.html">TCPhotoViewerDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TCPhotosViewControllerDelegate.html">TCPhotosViewControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TCPhotoViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">TCPhotoViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="kt"><a href="../Protocols/TCPhotoContainer.html">TCPhotoContainer</a></span><span class="p">,</span> <span class="kt">UIScrollViewDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13TCPhotoViewer0A14ViewControllerC5photoAA0A0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/photo" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13TCPhotoViewer0A14ViewControllerC5photoAA0A0_pSgvp">photo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">photo</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TCPhoto.html">TCPhoto</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13TCPhotoViewer0A14ViewControllerC8delegateAA0acD8Delegate_pSgXwvp"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13TCPhotoViewer0A14ViewControllerC8delegateAA0acD8Delegate_pSgXwvp">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TCPhotoViewControllerDelegate.html">TCPhotoViewControllerDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13TCPhotoViewer0A14ViewControllerC012scalingImageC0AA09TCScalingfC0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/scalingImageView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13TCPhotoViewer0A14ViewControllerC012scalingImageC0AA09TCScalingfC0CSgvp">scalingImageView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">scalingImageView</span><span class="p">:</span> <span class="kt"><a href="../Classes/TCScalingImageView.html">TCScalingImageView</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13TCPhotoViewer0A14ViewControllerC07loadingC0So6UIViewCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/loadingView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13TCPhotoViewer0A14ViewControllerC07loadingC0So6UIViewCSgvp">loadingView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">loadingView</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13TCPhotoViewer0A14ViewControllerC18notificationCenterSo012NotificationF0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/notificationCenter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13TCPhotoViewer0A14ViewControllerC18notificationCenterSo012NotificationF0CSgvp">notificationCenter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">notificationCenter</span><span class="p">:</span> <span class="kt">NotificationCenter</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13TCPhotoViewer0A14ViewControllerC26doubleTapGestureRecognizerSo05UITapgH0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/doubleTapGestureRecognizer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13TCPhotoViewer0A14ViewControllerC26doubleTapGestureRecognizerSo05UITapgH0Cvp">doubleTapGestureRecognizer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">doubleTapGestureRecognizer</span><span class="p">:</span> <span class="kt">UITapGestureRecognizer</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13TCPhotoViewer0A14ViewControllerC26longPressGestureRecognizerSo06UILongfgH0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/longPressGestureRecognizer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13TCPhotoViewer0A14ViewControllerC26longPressGestureRecognizerSo06UILongfgH0Cvp">longPressGestureRecognizer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">longPressGestureRecognizer</span><span class="p">:</span> <span class="kt">UILongPressGestureRecognizer</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13TCPhotoViewer0A14ViewControllerCAcA0A0_pSg9withPhoto_So6UIViewCSg07loadingC0So18NotificationCenterCSg012notificationJ0tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(withPhoto:loadingView:notificationCenter:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13TCPhotoViewer0A14ViewControllerCAcA0A0_pSg9withPhoto_So6UIViewCSg07loadingC0So18NotificationCenterCSg012notificationJ0tcfc">init(withPhoto:loadingView:notificationCenter:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="n">withPhoto</span> <span class="nv">photo</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TCPhoto.html">TCPhoto</a></span><span class="p">?,</span>
+    <span class="nv">loadingView</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">?,</span>
+    <span class="nv">notificationCenter</span><span class="p">:</span> <span class="kt">NotificationCenter</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)initWithNibName:bundle:"></a>
+                    <a name="//apple_ref/swift/Method/init(nibName:bundle:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)initWithNibName:bundle:">init(nibName:bundle:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">nibName</span> <span class="nv">nibNameOrNil</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">bundle</span> <span class="nv">nibBundleOrNil</span><span class="p">:</span> <span class="kt">Bundle</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)initWithCoder:"></a>
+                    <a name="//apple_ref/swift/Method/init(coder:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)initWithCoder:">init(coder:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">?(</span><span class="n">coder</span> <span class="nv">aDecoder</span><span class="p">:</span> <span class="kt">NSCoder</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)viewDidLoad"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)viewDidLoad">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)viewWillLayoutSubviews"></a>
+                    <a name="//apple_ref/swift/Method/viewWillLayoutSubviews()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)viewWillLayoutSubviews">viewWillLayoutSubviews()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">viewWillLayoutSubviews</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)prefersHomeIndicatorAutoHidden"></a>
+                    <a name="//apple_ref/swift/Method/prefersHomeIndicatorAutoHidden()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)prefersHomeIndicatorAutoHidden">prefersHomeIndicatorAutoHidden()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">prefersHomeIndicatorAutoHidden</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13TCPhotoViewer0A14ViewControllerC012setupLoadingC0ySo6UIViewCSgF"></a>
+                    <a name="//apple_ref/swift/Method/setupLoadingView(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13TCPhotoViewer0A14ViewControllerC012setupLoadingC0ySo6UIViewCSgF">setupLoadingView(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupLoadingView</span><span class="p">(</span><span class="n">_</span> <span class="nv">loadingView</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)photoImageUpdatedWithNotification:"></a>
+                    <a name="//apple_ref/swift/Method/photoImageUpdated(withNotification:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)photoImageUpdatedWithNotification:">photoImageUpdated(withNotification:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">photoImageUpdated</span><span class="p">(</span><span class="n">withNotification</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">Notification</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13TCPhotoViewer0A14ViewControllerC11updateImageySo7UIImageCSg_10Foundation4DataVSg05imageI0tF"></a>
+                    <a name="//apple_ref/swift/Method/updateImage(_:imageData:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13TCPhotoViewer0A14ViewControllerC11updateImageySo7UIImageCSg_10Foundation4DataVSg05imageI0tF">updateImage(_:imageData:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">updateImage</span><span class="p">(</span><span class="n">_</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">?,</span> <span class="nv">imageData</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)didDoubleTapWithGestureRecognizer:"></a>
+                    <a name="//apple_ref/swift/Method/didDoubleTapWithGestureRecognizer(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)didDoubleTapWithGestureRecognizer:">didDoubleTapWithGestureRecognizer(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">didDoubleTapWithGestureRecognizer</span><span class="p">(</span><span class="n">_</span> <span class="nv">recognizer</span><span class="p">:</span> <span class="kt">UITapGestureRecognizer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)didLongPressWithGestureRecognizer:"></a>
+                    <a name="//apple_ref/swift/Method/didLongPressWithGestureRecognizer(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)didLongPressWithGestureRecognizer:">didLongPressWithGestureRecognizer(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">didLongPressWithGestureRecognizer</span><span class="p">(</span><span class="n">_</span> <span class="nv">recognizer</span><span class="p">:</span> <span class="kt">UILongPressGestureRecognizer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)viewForZoomingInScrollView:"></a>
+                    <a name="//apple_ref/swift/Method/viewForZooming(in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)viewForZoomingInScrollView:">viewForZooming(in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">viewForZooming</span><span class="p">(</span><span class="k">in</span> <span class="nv">scrollView</span><span class="p">:</span> <span class="kt">UIScrollView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIView</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)scrollViewWillBeginZooming:withView:"></a>
+                    <a name="//apple_ref/swift/Method/scrollViewWillBeginZooming(_:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)scrollViewWillBeginZooming:withView:">scrollViewWillBeginZooming(_:with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">scrollViewWillBeginZooming</span><span class="p">(</span><span class="n">_</span> <span class="nv">scrollView</span><span class="p">:</span> <span class="kt">UIScrollView</span><span class="p">,</span> <span class="n">with</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)scrollViewDidEndZooming:withView:atScale:"></a>
+                    <a name="//apple_ref/swift/Method/scrollViewDidEndZooming(_:with:atScale:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(cs)TCPhotoViewController(im)scrollViewDidEndZooming:withView:atScale:">scrollViewDidEndZooming(_:with:atScale:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">scrollViewDidEndZooming</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">scrollView</span><span class="p">:</span> <span class="kt">UIScrollView</span><span class="p">,</span>
+    <span class="n">with</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">?,</span>
+    <span class="n">atScale</span> <span class="nv">scale</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/TizianoCoroneo/TCPhotoViewer" target="_blank" rel="external">Tiziano Coroneo</a>. All rights reserved. (Last updated: 2018-08-03)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

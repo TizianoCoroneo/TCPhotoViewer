@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TCPhotosViewControllerDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/TCPhotosViewControllerDelegate" class="dashAnchor"></a>
+    <a title="TCPhotosViewControllerDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">TCPhotoViewer Docs</a> (0% documented)</p>
+        <p class="header-right"><a href="https://github.com/TizianoCoroneo/TCPhotoViewer"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">TCPhotoViewer Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        TCPhotosViewControllerDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/TCPhotoViewController.html">TCPhotoViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TCPhotoViewerArrayDataSource.html">TCPhotoViewerArrayDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TCPhotoViewerSinglePhotoDataSource.html">TCPhotoViewerSinglePhotoDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TCPhotosViewController.html">TCPhotosViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TCScalingImageView.html">TCScalingImageView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/TCPhoto.html">TCPhoto</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TCPhotoContainer.html">TCPhotoContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TCPhotoViewControllerDelegate.html">TCPhotoViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TCPhotoViewerDataSource.html">TCPhotoViewerDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TCPhotosViewControllerDelegate.html">TCPhotosViewControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TCPhotosViewControllerDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">TCPhotosViewControllerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span><span class="p">,</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photoViewController:titleForPhoto:atIndex:totalPhotoCount:"></a>
+                    <a name="//apple_ref/swift/Method/photoViewController(_:titleForPhoto:atIndex:totalPhotoCount:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photoViewController:titleForPhoto:atIndex:totalPhotoCount:">photoViewController(_:titleForPhoto:atIndex:totalPhotoCount:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photoViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/TCPhotosViewController.html">TCPhotosViewController</a></span><span class="p">,</span> <span class="n">titleForPhoto</span> <span class="nv">photo</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TCPhoto.html">TCPhoto</a></span><span class="p">,</span> <span class="n">atIndex</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">totalPhotoCount</span> <span class="nv">count</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photoViewController:captionViewForPhoto:"></a>
+                    <a name="//apple_ref/swift/Method/photoViewController(_:captionViewForPhoto:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photoViewController:captionViewForPhoto:">photoViewController(_:captionViewForPhoto:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photoViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/TCPhotosViewController.html">TCPhotosViewController</a></span><span class="p">,</span> <span class="nv">captionViewForPhoto</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TCPhoto.html">TCPhoto</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photoViewController:loadingViewForPhoto:"></a>
+                    <a name="//apple_ref/swift/Method/photoViewController(_:loadingViewForPhoto:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photoViewController:loadingViewForPhoto:">photoViewController(_:loadingViewForPhoto:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photoViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/TCPhotosViewController.html">TCPhotosViewController</a></span><span class="p">,</span> <span class="nv">loadingViewForPhoto</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TCPhoto.html">TCPhoto</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photosViewController:captionViewRespectsSafeAreaForPhoto:"></a>
+                    <a name="//apple_ref/swift/Method/photosViewController(_:captionViewRespectsSafeAreaForPhoto:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photosViewController:captionViewRespectsSafeAreaForPhoto:">photosViewController(_:captionViewRespectsSafeAreaForPhoto:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photosViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/TCPhotosViewController.html">TCPhotosViewController</a></span><span class="p">,</span> <span class="nv">captionViewRespectsSafeAreaForPhoto</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TCPhoto.html">TCPhoto</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photosViewControllerWithWillDismiss:"></a>
+                    <a name="//apple_ref/swift/Method/photosViewController(willDismiss:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photosViewControllerWithWillDismiss:">photosViewController(willDismiss:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photosViewController</span><span class="p">(</span><span class="n">willDismiss</span> <span class="nv">photoViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/TCPhotosViewController.html">TCPhotosViewController</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photosViewControllerWithDidDismiss:"></a>
+                    <a name="//apple_ref/swift/Method/photosViewController(didDismiss:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photosViewControllerWithDidDismiss:">photosViewController(didDismiss:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photosViewController</span><span class="p">(</span><span class="n">didDismiss</span> <span class="nv">photoViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/TCPhotosViewController.html">TCPhotosViewController</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photosViewController:didNavigateToPhoto:atIndex:"></a>
+                    <a name="//apple_ref/swift/Method/photosViewController(_:didNavigateToPhoto:atIndex:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photosViewController:didNavigateToPhoto:atIndex:">photosViewController(_:didNavigateToPhoto:atIndex:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photosViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/TCPhotosViewController.html">TCPhotosViewController</a></span><span class="p">,</span> <span class="n">didNavigateToPhoto</span> <span class="nv">photo</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TCPhoto.html">TCPhoto</a></span><span class="p">?,</span> <span class="n">atIndex</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photoViewController:maximumZoomScaleForPhoto:"></a>
+                    <a name="//apple_ref/swift/Method/photoViewController(_:maximumZoomScaleForPhoto:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photoViewController:maximumZoomScaleForPhoto:">photoViewController(_:maximumZoomScaleForPhoto:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photoViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/TCPhotosViewController.html">TCPhotosViewController</a></span><span class="p">,</span> <span class="n">maximumZoomScaleForPhoto</span> <span class="nv">photo</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TCPhoto.html">TCPhoto</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photoViewController:referenceViewForCurrentPhoto:"></a>
+                    <a name="//apple_ref/swift/Method/photoViewController(_:referenceViewForCurrentPhoto:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photoViewController:referenceViewForCurrentPhoto:">photoViewController(_:referenceViewForCurrentPhoto:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photoViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/TCPhotosViewController.html">TCPhotosViewController</a></span><span class="p">,</span> <span class="n">referenceViewForCurrentPhoto</span> <span class="nv">photo</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TCPhoto.html">TCPhoto</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photosViewController:handleActionButtonTappedForPhoto:"></a>
+                    <a name="//apple_ref/swift/Method/photosViewController(_:handleActionButtonTappedForPhoto:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photosViewController:handleActionButtonTappedForPhoto:">photosViewController(_:handleActionButtonTappedForPhoto:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photosViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/TCPhotosViewController.html">TCPhotosViewController</a></span><span class="p">,</span> <span class="nv">handleActionButtonTappedForPhoto</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TCPhoto.html">TCPhoto</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photosViewController:handleLongPressForPhoto:withGestureRecognizer:"></a>
+                    <a name="//apple_ref/swift/Method/photosViewController(_:handleLongPressForPhoto:withGestureRecognizer:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photosViewController:handleLongPressForPhoto:withGestureRecognizer:">photosViewController(_:handleLongPressForPhoto:withGestureRecognizer:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photosViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/TCPhotosViewController.html">TCPhotosViewController</a></span><span class="p">,</span> <span class="n">handleLongPressForPhoto</span> <span class="nv">photo</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TCPhoto.html">TCPhoto</a></span><span class="p">?,</span> <span class="n">withGestureRecognizer</span> <span class="nv">recognizer</span><span class="p">:</span> <span class="kt">UILongPressGestureRecognizer</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photosViewController:actionCompletedWithActivityType:"></a>
+                    <a name="//apple_ref/swift/Method/photosViewController(_:actionCompletedWithActivityType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TCPhotoViewer@objc(pl)TCPhotosViewControllerDelegate(im)photosViewController:actionCompletedWithActivityType:">photosViewController(_:actionCompletedWithActivityType:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">photosViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">photoViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/TCPhotosViewController.html">TCPhotosViewController</a></span><span class="p">,</span> <span class="n">actionCompletedWithActivityType</span> <span class="nv">activityType</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/TizianoCoroneo/TCPhotoViewer" target="_blank" rel="external">Tiziano Coroneo</a>. All rights reserved. (Last updated: 2018-08-03)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
