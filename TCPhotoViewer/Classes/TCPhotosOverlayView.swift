@@ -62,7 +62,7 @@ class TCPhotoOverlayView: UIView {
 
         self.addSubview(navigationBar)
 
-        if self.responds(to: #selector(getter: safeAreaLayoutGuide)) {
+        if #available(iOS 11.0, *) {
             let top = navigationBar.topAnchor
                 .constraint(equalTo: safeAreaLayoutGuide.topAnchor)
             let left = navigationBar.leftAnchor
@@ -90,7 +90,7 @@ class TCPhotoOverlayView: UIView {
 
         self.addSubview(self.captionView!)
 
-        if self.responds(to: #selector(getter: safeAreaLayoutGuide)) && self.captionViewRespectsSafeArea {
+        if #available(iOS 11.0, *), captionViewRespectsSafeArea {
             let bottom = self.captionView!.bottomAnchor
                 .constraint(equalTo: safeAreaLayoutGuide.bottomAnchor)
             let left = self.captionView!.leftAnchor

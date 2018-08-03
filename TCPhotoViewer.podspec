@@ -21,7 +21,7 @@ TCPhotoViewer is a slideshow and image viewer that includes double-tap to zoom, 
   s.source           = { :git => 'https://github.com/TizianoCoroneo/TCPhotoViewer.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/tizianocoroneo'
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '10.3'
 
   s.source_files = 'TCPhotoViewer/Classes/**/*'
   
